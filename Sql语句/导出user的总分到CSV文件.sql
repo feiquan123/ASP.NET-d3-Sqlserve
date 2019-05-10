@@ -49,7 +49,7 @@ go
 --调用存储过程exportUserAnsawer
  --F:\Data\data.csv
 declare @w int
-exec 学生核心素养测评..exportUserAnsawer 5, 'F:\Data\data.csv' ,@w output
+exec 数据库名..exportUserAnsawer 5, 'F:\Data\data.csv' ,@w output
 --PRINT '执行结果：'+CONVERT(varchar(20),@w)
 select @w as '返回值'
 
