@@ -35,7 +35,7 @@ create   proc   exportUserAnsawer
 	set @s='echo data1,data2>"'+@filepath+'"' 
 	exec   master..xp_cmdshell  @s,no_output 
 	--导出csv文件到temp目录
-	set   @s='bcp   "exec 学生核心素养测评..queryUserAnsawer '+cast(@id as varchar(50))+'" queryout "'+'"%temp%\temp.csv"'+'"   /c /t,  /U"alice"   -P"alice" /S ALICE\ALICE'     
+	set   @s='bcp   "exec 数据库名..queryUserAnsawer '+cast(@id as varchar(50))+'" queryout "'+'"%temp%\temp.csv"'+'"   /c /t,  /U"alice"   -P"alice" /S ALICE\ALICE'     
 	exec   master..xp_cmdshell   @s ,no_output 
 	--将temp目录下的csv文件与之前的csv文件的表头合并
 	set @s='more %temp%\temp.csv >>"'+@filepath+'"'
