@@ -1,0 +1,15 @@
+
+#piechart{
+    background: #ddd;
+}
+
+
+#piechart  .path{
+   fill-opacity: 1;
+}
+
+#piechart path:hover {
+    cursor: pointer;
+    fill-opacity: 0.8;
+   
+}

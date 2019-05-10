@@ -1,0 +1,61 @@
+
+#areachart{
+    background: #ddd;
+    width: 1100px;
+    height: 600px;
+}
+
+/*曲线*/
+#areachart .curve{
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2;
+}
+#areachart .curve:hover{
+    fill: none;
+    stroke: mediumturquoise;
+    stroke-width: 3;
+}
+
+/*面积图*/
+#areachart .area{
+    fill:steelblue;
+    opacity: 0.7;
+}
+#areachart .area:hover{
+    fill:cornflowerblue;
+    opacity: 0.5;
+}
+
+/*x,y轴*/
+#areachart .axis line{
+    stroke:darkcyan;
+    stroke-width: 2;
+}
+/*x,y轴文字*/
+#areachart .tick text{
+    font-size:2em;
+}
+/*x,y轴文字注解*/
+#areachart .tips{
+    fill:steelblue;
+}
+
+/*网格*/
+#areachart .tick{
+    stroke: gray;
+    stroke-opacity: 0.3;
+    shape-rendering: crispEdges;
+}
+#areachart .domain{
+    display: none;
+}
+
+
+/*圆点*/
+#areachart .circle{
+    fill:cadetblue;
+}
+#areachart .circle:hover{
+    fill:yellow;
+}

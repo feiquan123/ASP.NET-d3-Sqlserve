@@ -1,0 +1,14 @@
+
+
+#barchart{
+    background: #ddd;
+}
+
+#barchart svg rect{
+    fill:#339999;
+}
+
+#barchart svg rect:hover {
+    cursor: pointer;
+    fill: #66cccc;
+}
